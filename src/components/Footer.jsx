@@ -1,0 +1,12 @@
+import { student } from '../data/labs.js'
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <p className="footer__name">{student.name}</p>
+      <p>Roll Number: {student.rollNo}</p>
+      <p>{student.subject}</p>
+      <p className="footer__copy">© {new Date().getFullYear()} {student.name}. All rights reserved.</p>
+    </footer>
+  )
+}
